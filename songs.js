@@ -3,9 +3,9 @@ const mysql = require('mysql2');
 const url = require('url');
 
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: '192.168.1.139',
   user: 'root',
-  password: '',
+  password: 'botewifi',
   database: 'songs'   // change database name here
 });
 
@@ -88,5 +88,5 @@ const server = http.createServer((req, res) => {
 
 const port = 3000;
 server.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://192.168.1.139:${port}`);
 });
